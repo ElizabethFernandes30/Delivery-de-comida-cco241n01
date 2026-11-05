@@ -5,16 +5,15 @@
 
 ## Equipe
 
-**Nome do time:** ____________________  
-**Modelo escolhido:** ___ (1 a 5)
+**Nome do time:** Os Mugiwaras 
+**Modelo escolhido:** 1. Delivery de Comida
 
-| Nome | Usuário do GitHub |
-| --- | --- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+|        Nome       | Usuário do GitHub |
+| Davi Castro       | Davi-Astro |
+| Elizabeth Marques | ElizabethFernandes30 |
+| Guilherme Castro  | BatataSayajin |
+| Isaac Queiroz     | isaacaqueiroz |
+| Paulo Vieira      | paulo-cco |
 
 ## Modelos
 

@@ -14,7 +14,7 @@
 | Elizabeth Marques | ElizabethFernandes30 |
 | Guilherme Castro  | BatataSayajin |
 | Isaac Queiroz     | isaacaqueiroz |
-| Luiz Ricardo      ||
+| Luiz Ricardo      | xXBR4BOXx |
 | Paulo Vieira      | paulo-cco |
 
 ## Modelos

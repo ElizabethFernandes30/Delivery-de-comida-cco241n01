@@ -9,7 +9,7 @@
 **Modelo escolhido:** 1. Delivery de Comida
 
 |        Nome       | Usuário do GitHub |
-| Daniela Yasmin    ||
+| Daniela Yasmin    | danielapicanco |
 | Davi Castro       | Davi-Astro |
 | Elizabeth Marques | ElizabethFernandes30 |
 | Guilherme Castro  | BatataSayajin |

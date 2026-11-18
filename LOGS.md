@@ -9,7 +9,7 @@ Descrevam em uma frase o fluxo executado e colem abaixo os logs copiados do term
 
 ## Teste de integração executado localmente
 
-**Ambiente:** quatro processos Python executados localmente, com as mesmas portas e rotas do Compose. **Não foi um teste com Docker** (Docker não está disponível neste ambiente).  
+**Ambiente:** quatro processos Python executados localmente, com as mesmas portas e rotas do Compose. **Não foi um teste com Docker**.  
 **Data do teste:** 18/11/2026 17:50.
 
 | Verificação | Resultado observado |

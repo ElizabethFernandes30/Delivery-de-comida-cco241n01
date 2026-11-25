@@ -4,6 +4,8 @@ import com.delivery.pedidos.entity.Pedido;
 import com.delivery.pedidos.service.PedidoService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/pedidos")
@@ -17,7 +19,13 @@ public class PedidoController {
 
     @PostMapping
     public Pedido cadastrar(@RequestBody Pedido pedido) {
-        return service.salvar(pedido);
+        try {
+            return service.salvar(pedido);
+        } catch (IllegalArgumentException e) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST, e.getMessage()
+            );
+        }
     }
 
     @GetMapping

@@ -35,7 +35,15 @@ public class PedidoController {
 
     @GetMapping("/{id}")
     public Pedido buscarPorId(@PathVariable Long id) {
-        return service.buscarPorId(id);
+        Pedido pedido = service.buscarPorId(id);
+
+        if (pedido == null) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "Pedido não encontrado!"
+            );
+        }
+
+        return pedido;
     }
 
     @DeleteMapping("/{id}")

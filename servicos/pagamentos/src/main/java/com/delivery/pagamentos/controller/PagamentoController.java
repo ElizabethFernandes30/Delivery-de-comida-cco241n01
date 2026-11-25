@@ -4,6 +4,8 @@ import com.delivery.pagamentos.entity.Pagamento;
 import com.delivery.pagamentos.service.PagamentoService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/pagamentos")
@@ -17,7 +19,13 @@ public class PagamentoController {
 
     @PostMapping
     public Pagamento cadastrar(@RequestBody Pagamento pagamento) {
-        return service.salvar(pagamento);
+        try {
+            return service.salvar(pagamento);
+        } catch (IllegalArgumentException e) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST, e.getMessage()
+            );
+        }
     }
 
     @GetMapping
